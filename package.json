@@ -1,0 +1,30 @@
+{
+  "name": "logo-maker",
+  "version": "1.0.0",
+  "description": "Logo Maker",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loyallhart/logo-maker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loyallhart/logo-maker/issues"
+  },
+  "homepage": "https://github.com/loyallhart/logo-maker#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}

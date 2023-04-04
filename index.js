@@ -51,14 +51,13 @@ inquirer.prompt([
   }
 
   const svgContent = `
-  <?xml version="1.0" standalone="no"?> 
-  <svg width="300" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
-      ${shapeObj.render()}
-      <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Verdana" fill='${textColor}'>${text}</text>
-      </svg>
-  `;
+  <svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  ${shapeObj.render()}
+  <text x="150" y="125" font-size="55" font-family="Verdana" text-anchor="middle" fill='${textColor}'>${text}</text>
+  </svg>
+`;
 
-  fs.writeFile('./output/logo.svg', svgContent, (err) => {
+  fs.writeFile('logo.svg', svgContent, (err) => {
     if (err) throw err;
     console.log('logo.svg created successfully!');
   });

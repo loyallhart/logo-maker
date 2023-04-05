@@ -35,16 +35,16 @@ inquirer.prompt([
 ]).then(answers => {
   const { text, textColor, shape, shapeColor } = answers;
 
-  let shapeObj;
+  let shapeLogo;
   switch (shape) {
     case 'circle':
-      shapeObj = new Circle(shapeColor);
+      shapeLogo = new Circle(shapeColor);
       break;
     case 'square':
-      shapeObj = new Square(shapeColor);
+      shapeLogo = new Square(shapeColor);
       break;
     case 'triangle':
-      shapeObj = new Triangle(shapeColor);
+      shapeLogo = new Triangle(shapeColor);
       break;
     default:
       throw new Error('Invalid shape');
@@ -52,7 +52,7 @@ inquirer.prompt([
 
   const svgContent = `
   <svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-  ${shapeObj.render()}
+  ${shapeLogo.render()}
   <text x="150" y="125" font-size="55" font-family="Verdana" text-anchor="middle" fill='${textColor}'>${text}</text>
   </svg>
 `;

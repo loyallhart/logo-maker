@@ -15,8 +15,8 @@
   
   ## Usage
   This project can be used to create a logo.
-  [Click here for a sample of this project](https://drive.google.com/file/d/1FUSVNEj1huR1WUqYhK8C_G06hi7b8HQe/view?usp=sharing)
-  
+  [Click here for a sample of this project](https://drive.google.com/file/d/1mw8YTanoE83wQ2-NfStWsNzLlPnikHEg/view?usp=share_link)
+
   ## License
   This project is using the MIT license. Click [here](https://opensource.org/licenses/MIT) to learn more.
   License: MIT 
